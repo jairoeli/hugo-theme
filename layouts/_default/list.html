@@ -1,0 +1,14 @@
+{{ define "title" }}
+  {{ .Title }} / {{ .Site.Title }}
+{{ end }}
+
+{{ define "content" }}
+  <h1>{{ .Title }}</h1>
+  <ul>
+    {{ range .Data.Pages }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

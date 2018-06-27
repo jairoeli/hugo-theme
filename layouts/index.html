@@ -1,0 +1,11 @@
+{{ define "content" }}
+  {{ partial "home.html" }}
+  <h2>Recent Posts</h2>
+  <ul>
+    {{ range first 3 (where .Data.Pages "Type" "post") }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

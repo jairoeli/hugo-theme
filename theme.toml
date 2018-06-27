@@ -1,0 +1,12 @@
+name = "jairoeli.github.io"
+license = "MIT"
+licenselink = "https://github.com/jairoeli/hugo-theme/blob/master/LICENSE.md"
+description = "Theme for jairoeli.github.io"
+homepage = "https://github.com/jairoeli/hugo-theme"
+tags = []
+features = []
+min_version = "0.20"
+
+[author]
+  name = "Jairo Eli de León"
+  homepage = "https://jairoeli.github.io"

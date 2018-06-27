@@ -1,0 +1,38 @@
+*
+  box-sizing: border-box
+
+body
+  font-family: $main-font
+  font-size: $base-font-size
+  color: $text-color
+  line-height: 1.6em
+  padding: 0 1em
+
+h1, h2, h3, h4, h5, h6
+  color: $header-color
+  line-height: 1.2em
+
+h1, h2
+  margin-top: 2em
+
+code, pre
+  font-family: $monospace-font
+
+pre
+  background-color: $code-background-color
+  width: 100%
+  padding: 1.5em
+  overflow-y: scroll
+
+img
+  max-width: 100%
+
+a
+  color: black
+  text-decoration: none
+  padding: 3px 0 0 0
+  border-bottom: 3px solid $flourish-color
+  transition: background-color $link-fade-animation-time, color $link-fade-animation-time
+
+  &:hover
+    background-color: $flourish-color

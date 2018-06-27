@@ -1,0 +1,13 @@
+{{ define "title" }}
+  {{ .Title }} / {{ .Site.Title }}
+{{ end }}
+
+{{ define "content" }}
+  <article>
+    <h1>{{ .Title }}</h1>
+    {{ if eq .Type "post" }}
+      <span class="last-updated">Posted {{ .Date.Format "January 2, 2006" }}</span>
+    {{ end }}
+    {{ .Content }}
+  </article>
+{{ end }}
